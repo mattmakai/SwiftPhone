@@ -7,12 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C91EB39C1B7D0B7D00247C15 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C91EB3991B7D0B7D00247C15 /* libcrypto.a */; };
+		C91EB39D1B7D0B7D00247C15 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C91EB39A1B7D0B7D00247C15 /* libssl.a */; };
+		C91EB39E1B7D0B7D00247C15 /* libTwilioClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C91EB39B1B7D0B7D00247C15 /* libTwilioClient.a */; };
 		C944FCC31B7C22C100B356DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944FCC21B7C22C100B356DD /* AppDelegate.swift */; };
 		C944FCC51B7C22C100B356DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944FCC41B7C22C100B356DD /* ViewController.swift */; };
 		C944FCC81B7C22C100B356DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C944FCC61B7C22C100B356DD /* Main.storyboard */; };
 		C944FCCA1B7C22C100B356DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C944FCC91B7C22C100B356DD /* Images.xcassets */; };
 		C944FCCD1B7C22C100B356DD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C944FCCB1B7C22C100B356DD /* LaunchScreen.xib */; };
 		C944FCD91B7C22C100B356DD /* SwiftPhoneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944FCD81B7C22C100B356DD /* SwiftPhoneTests.swift */; };
+		C944FCE91B7C231200B356DD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944FCE81B7C231200B356DD /* AudioToolbox.framework */; };
+		C944FCEB1B7C231800B356DD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944FCEA1B7C231800B356DD /* AVFoundation.framework */; };
+		C944FCED1B7C231E00B356DD /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944FCEC1B7C231E00B356DD /* CFNetwork.framework */; };
+		C944FCEF1B7C232400B356DD /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C944FCEE1B7C232400B356DD /* SystemConfiguration.framework */; };
+		C944FCF21B7C261E00B356DD /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944FCF11B7C261E00B356DD /* Phone.swift */; };
+		C944FCF41B7C262B00B356DD /* SwiftRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C944FCF31B7C262B00B356DD /* SwiftRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C91EB3991B7D0B7D00247C15 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../Downloads/TwilioClient/Libraries/libcrypto.a; sourceTree = "<group>"; };
+		C91EB39A1B7D0B7D00247C15 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../Downloads/TwilioClient/Libraries/libssl.a; sourceTree = "<group>"; };
+		C91EB39B1B7D0B7D00247C15 /* libTwilioClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libTwilioClient.a; path = ../../../../Downloads/TwilioClient/Libraries/libTwilioClient.a; sourceTree = "<group>"; };
 		C944FCBD1B7C22C100B356DD /* SwiftPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C944FCC11B7C22C100B356DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C944FCC21B7C22C100B356DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +48,13 @@
 		C944FCD21B7C22C100B356DD /* SwiftPhoneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPhoneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C944FCD71B7C22C100B356DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C944FCD81B7C22C100B356DD /* SwiftPhoneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPhoneTests.swift; sourceTree = "<group>"; };
+		C944FCE81B7C231200B356DD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		C944FCEA1B7C231800B356DD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C944FCEC1B7C231E00B356DD /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C944FCEE1B7C232400B356DD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C944FCF01B7C25FE00B356DD /* SwiftPhone-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SwiftPhone-Bridging-Header.h"; sourceTree = "<group>"; };
+		C944FCF11B7C261E00B356DD /* Phone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		C944FCF31B7C262B00B356DD /* SwiftRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +62,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C944FCEF1B7C232400B356DD /* SystemConfiguration.framework in Frameworks */,
+				C91EB39C1B7D0B7D00247C15 /* libcrypto.a in Frameworks */,
+				C91EB39D1B7D0B7D00247C15 /* libssl.a in Frameworks */,
+				C944FCED1B7C231E00B356DD /* CFNetwork.framework in Frameworks */,
+				C944FCEB1B7C231800B356DD /* AVFoundation.framework in Frameworks */,
+				C944FCE91B7C231200B356DD /* AudioToolbox.framework in Frameworks */,
+				C91EB39E1B7D0B7D00247C15 /* libTwilioClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +85,10 @@
 		C944FCB41B7C22C100B356DD = {
 			isa = PBXGroup;
 			children = (
+				C944FCEE1B7C232400B356DD /* SystemConfiguration.framework */,
+				C944FCEC1B7C231E00B356DD /* CFNetwork.framework */,
+				C944FCEA1B7C231800B356DD /* AVFoundation.framework */,
+				C944FCE81B7C231200B356DD /* AudioToolbox.framework */,
 				C944FCBF1B7C22C100B356DD /* SwiftPhone */,
 				C944FCD51B7C22C100B356DD /* SwiftPhoneTests */,
 				C944FCBE1B7C22C100B356DD /* Products */,
@@ -78,8 +108,14 @@
 			isa = PBXGroup;
 			children = (
 				C944FCC21B7C22C100B356DD /* AppDelegate.swift */,
+				C944FCF01B7C25FE00B356DD /* SwiftPhone-Bridging-Header.h */,
+				C944FCF11B7C261E00B356DD /* Phone.swift */,
+				C944FCF31B7C262B00B356DD /* SwiftRequest.swift */,
 				C944FCC41B7C22C100B356DD /* ViewController.swift */,
 				C944FCC61B7C22C100B356DD /* Main.storyboard */,
+				C91EB3991B7D0B7D00247C15 /* libcrypto.a */,
+				C91EB39A1B7D0B7D00247C15 /* libssl.a */,
+				C91EB39B1B7D0B7D00247C15 /* libTwilioClient.a */,
 				C944FCC91B7C22C100B356DD /* Images.xcassets */,
 				C944FCCB1B7C22C100B356DD /* LaunchScreen.xib */,
 				C944FCC01B7C22C100B356DD /* Supporting Files */,
@@ -161,6 +197,11 @@
 				TargetAttributes = {
 					C944FCBC1B7C22C100B356DD = {
 						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					C944FCD11B7C22C100B356DD = {
 						CreatedOnToolsVersion = 6.4;
@@ -213,7 +254,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C944FCC51B7C22C100B356DD /* ViewController.swift in Sources */,
+				C944FCF21B7C261E00B356DD /* Phone.swift in Sources */,
 				C944FCC31B7C22C100B356DD /* AppDelegate.swift in Sources */,
+				C944FCF41B7C262B00B356DD /* SwiftRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +337,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -331,6 +375,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -340,9 +385,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/matt/Downloads/TwilioClient/Headers/,
+				);
 				INFOPLIST_FILE = SwiftPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matt/Downloads/TwilioClient/Libraries,
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPhone/SwiftPhone-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -350,9 +406,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/matt/Downloads/TwilioClient/Headers/,
+				);
 				INFOPLIST_FILE = SwiftPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/matt/Downloads/TwilioClient/Libraries,
+				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPhone/SwiftPhone-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +476,7 @@
 				C944FCDE1B7C22C100B356DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C944FCDF1B7C22C100B356DD /* Build configuration list for PBXNativeTarget "SwiftPhoneTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +485,7 @@
 				C944FCE11B7C22C100B356DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
